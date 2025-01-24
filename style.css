@@ -1,0 +1,143 @@
+/* Сброс базовых стилей для кроссбраузерного единообразия */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Контейнер, центрирование содержимого */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Оформление формы одного прибора */
+.device-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.device-form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  min-width: 140px;
+}
+
+.device-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.device-form input[type="number"],
+.device-form input[type="text"],
+.device-form select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.device-form input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.2);
+}
+
+/* Кнопка добавления прибора */
+.add-device-btn {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-device-btn:hover {
+  background-color: #005999;
+}
+
+/* Кнопки "Рассчитать" и "Сбросить" */
+.buttons-row {
+  margin-bottom: 20px;
+}
+
+.buttons-row button {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.buttons-row button:hover {
+  background-color: #005999;
+}
+
+/* Таблица результатов */
+#result-table-container {
+  margin-top: 30px;
+  overflow-x: auto; /* Для горизонтальной прокрутки, если приборов много */
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: auto; /* Ширина будет подстраиваться под содержимое */
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Заголовки по центру */
+th {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+/* Содержимое ячеек выравниваем */
+td {
+  text-align: right;
+}
+
+/* Первый столбец (Период) - выравнивание по левому краю */
+td.period-cell {
+  text-align: left;
+  font-weight: bold;
+}

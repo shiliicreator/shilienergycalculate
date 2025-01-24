@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Калькулятор энергопотребления</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Калькулятор энергопотребления</h1>
+  
+  <div class="container">
+    <!-- Здесь будут добавляться формы для приборов -->
+    <div id="devices-wrapper"></div>
+
+    <!-- Кнопка добавления нового прибора -->
+    <button id="add-device-btn" class="add-device-btn">+ Добавить прибор</button>
+
+    <!-- Кнопки "Рассчитать" и "Сбросить" -->
+    <div class="buttons-row">
+      <button id="calculate-btn">Рассчитать</button>
+      <button id="reset-btn">Сбросить</button>
+    </div>
+
+    <!-- Блок для вывода итоговой таблицы сравнения -->
+    <div id="result-table-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
